@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор</title>
+    <style>
+        body {
+            height: 100vh;
+            position: relative;
+        }
+
+        .center-div {
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        button {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-div">
+        <form method="post" action="/">
+            <text>Введите пример:</text>
+            <input type="text" name="primer">
+            <button>"Решить"</button>
+        </form>
+        <p class="r"><text>{{primer}}</text></p>
+        <p class="r"><text>{{result}}</text></p>
+    </div>
+</body>
+</html>
